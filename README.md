@@ -32,14 +32,14 @@ Both csv files contain a binary matrix where each row represents a gene and each
 ### Creating binary matrix
 When the normal and tumor data are partially processed, the binary matrix can be obtained as follows.
 
-1. Place normal genes and tumor data in the correct folders, see for instance `exampleNormalGeneList.txt` and `exampleTumorData`.
+1. Place normal genes and tumor data in the correct folders, see for instance `exampleNormalGeneList.txt` and `exampleTumorData.txt`.
 2. Run `ConvertInstances.java`.
 
 ## Running the methods
 1. Place the binary matrices in the correct folders, see for instance `exampleTumorData-normal.csv` and `exampleTumorData-tumor.csv`. 
 2. (optional) Parameters can be changed in `GlobalParam.java`, e.g. time limit, hit range.
 3. Run GR-CP via `RunCP.java`.
-4. Run GR-MIP or price-and-branch via `RunColGenFramework.java`. The solver can be changed via `ModelType`. 
+4. Run GR-MIP or price-and-branch via `RunColGenFramework.java`. The solver can be changed via `ModelType.java`. 
 
 ## References
 Rick S. H. Willemsen, Tenindra Abeywickrama, Ramu Anandakrishnan, A Fast and Practical Column Generation Approach for Identifying Carcinogenic Multi-Hit Gene Combinations (2026), [arXiv:2602.22551](https://arxiv.org/abs/2602.22551).
