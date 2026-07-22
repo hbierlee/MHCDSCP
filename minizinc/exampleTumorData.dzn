@@ -1,0 +1,38 @@
+nComb = 10;
+nTumor = 3;
+nNormal = 2;
+beta = 10;
+
+% combination legend (1-indexed -> gene names)
+% 1: GENE_ID0+GENE_ID1
+% 2: GENE_ID0+GENE_ID2
+% 3: GENE_ID0+GENE_ID3
+% 4: GENE_ID1+GENE_ID2
+% 5: GENE_ID1+GENE_ID3
+% 6: GENE_ID2+GENE_ID3
+% 7: GENE_ID0+GENE_ID1+GENE_ID2
+% 8: GENE_ID0+GENE_ID1+GENE_ID3
+% 9: GENE_ID0+GENE_ID2+GENE_ID3
+% 10: GENE_ID1+GENE_ID2+GENE_ID3
+
+coversTumor = [| false, true, false
+                | false, false, false
+                | false, true, false
+                | false, false, false
+                | false, true, false
+                | true, false, false
+                | false, false, false
+                | false, true, false
+                | false, false, false
+                | false, false, false |];
+
+coversNormal = [| false, false
+                 | true, false
+                 | false, false
+                 | false, false
+                 | false, false
+                 | false, false
+                 | false, false
+                 | false, false
+                 | false, false
+                 | false, false |];
